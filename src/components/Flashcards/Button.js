@@ -1,8 +1,10 @@
 export default function Button({
-	color = "red",
+	color = "",
 	text = "",
 	setCardIsOpen,
 	setIsAnswered,
+	setAnswer,
+	answer,
 }) {
 	return (
 		<button
@@ -10,6 +12,7 @@ export default function Button({
 			onClick={() => {
 				setIsAnswered(true);
 				setCardIsOpen(false);
+				setAnswer(answer);
 			}}
 		>
 			<p>{text}</p>

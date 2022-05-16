@@ -2,7 +2,12 @@ import React from "react";
 import CardQuestion from "./CardQuestion";
 import CardAnswer from "./CardAnswer";
 
-export default function OpenedCard({ questions, setCardIsOpen, setIsAnswered }) {
+export default function OpenedCard({
+	questions,
+	setCardIsOpen,
+	setIsAnswered,
+	setAnswer,
+}) {
 	const [cardFace, setCardFace] = React.useState("question");
 	return (
 		<>
@@ -16,6 +21,7 @@ export default function OpenedCard({ questions, setCardIsOpen, setIsAnswered }) 
 					answer={questions.answer}
 					setCardIsOpen={setCardIsOpen}
 					setIsAnswered={setIsAnswered}
+					setAnswer={setAnswer}
 				/>
 			)}
 		</>

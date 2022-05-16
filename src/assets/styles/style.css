@@ -14,6 +14,11 @@ p {
 	font-weight: 400;
 }
 
+button > p {
+	font-size: 16px;
+	font-weight: 700;
+}
+
 .welcome {
 	height: 300px;
 	margin-top: 150px;
@@ -80,11 +85,6 @@ p {
 	margin-bottom: 25px;
 }
 
-button > p {
-	font-size: 16px;
-	font-weight: 700;
-}
-
 .flashcards ion-icon {
 	width: 20px;
 	height: 23px;
@@ -115,10 +115,6 @@ button > p {
 	align-self: flex-end;
 	margin-bottom: 6px;
 	margin-right: 15px;
-}
-
-.final > p {
-	text-decoration: line-through;
 }
 
 .card > div {
@@ -153,17 +149,50 @@ button > p {
 	background-color: #2fbe34;
 }
 
+.final > p {
+	text-decoration: line-through;
+}
+
+.final > ion-icon {
+	width: 23px;
+	height: 23px;
+}
+
+.close > p {
+	color: #ff3030;
+}
+
+.close > ion-icon {
+	color: #ff3030;
+}
+
+.help > p {
+	color: #ff922e;
+}
+
+.help > ion-icon {
+	color: #ff922e;
+}
+
+.checkmark > p {
+	color: #2fbe34;
+}
+
+.checkmark > ion-icon {
+	color: #2fbe34;
+}
+
 .footer {
-    position: fixed;
-    bottom: 0;
-    background-color: #FFFFFF;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
-    width: 100%;
-    min-height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Recursive", sans-serif;
-    font-size: 18px;
-    color: #333333;
+	position: fixed;
+	bottom: 0;
+	background-color: #ffffff;
+	box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+	width: 100%;
+	min-height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Recursive", sans-serif;
+	font-size: 18px;
+	color: #333333;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Flashcard from "./Flashcard";
 
-export default function Flashcards(props) {
+export default function Flashcards() {
 	const cards = [
 		{
 			question: "O que é JSX ?",
