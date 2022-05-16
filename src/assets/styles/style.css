@@ -4,11 +4,14 @@ body {
 	background-color: #fb6b6b;
 }
 
-footer {
-	width: 100%;
-	height: 70px;
-	background-color: #ffffff;
-	box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+header {
+	margin: 50px 0px 60px 0px;
+}
+
+p {
+	color: #333333;
+	font-family: "Recursive", sans-serif;
+	font-weight: 400;
 }
 
 .welcome {
@@ -53,11 +56,114 @@ footer {
 	flex-direction: column;
 }
 
-.flashcard {
-	background-color: #fff;
+.flashcards {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 50px;
+	padding-bottom: 155px;
+}
+
+.flashcards > button {
 	width: 300px;
-	height: 66px;
-	margin-bottom: 25px;
+	height: 65px;
+	background-color: #ffffff;
 	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: none;
+	padding: 0 15px;
+	margin-bottom: 25px;
+}
+
+button > p {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.flashcards ion-icon {
+	width: 20px;
+	height: 23px;
+	--ionicon-stroke-width: 40px;
+}
+
+.card {
+	width: 299px;
+	height: 131px;
+	background-color: #ffffd4;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card > p {
+	font-size: 18px;
+	margin-top: 18px;
+	margin-left: 15px;
+}
+
+.card > img {
+	width: 30px;
+	height: 20px;
+	align-self: flex-end;
+	margin-bottom: 6px;
+	margin-right: 15px;
+}
+
+.final > p {
+	text-decoration: line-through;
+}
+
+.card > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 13px 6px 13px;
+}
+
+.button {
+	width: 85px;
+	height: 37px;
+	border-radius: 5px;
+	border: none;
+}
+
+.button > p {
+	font-size: 12px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.red {
+	background-color: #ff3030;
+}
+
+.yellow {
+	background-color: #ff922e;
+}
+
+.green {
+	background-color: #2fbe34;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Recursive", sans-serif;
+    font-size: 18px;
+    color: #333333;
 }

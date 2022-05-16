@@ -8,12 +8,12 @@ export default function App() {
 	const [screen, setScreen] = React.useState("init");
 
 	return (
-		<React.Fragment>
+		<>
 			{screen === "init" ? (
 				<Welcome setScreen={setScreen} />
 			) : (
 				<Content setScreen={setScreen} />
 			)}
-		</React.Fragment>
+		</>
 	);
 }
